@@ -1,0 +1,2 @@
+nuget:
+  server:  "http://leapwork-skylab-test-agent-extensions-api-srv" # "https://api.nuget.org"

@@ -1,0 +1,3 @@
+nuget:
+  server:  "http://leapwork-apollo-agent-extensions-api-srv" # "https://api.nuget.org"
+  image: "superzer0/nuget-restore-test:latest"

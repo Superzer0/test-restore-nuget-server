@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: test-restore
+spec:
+  parallelism: 2
+  completions: 3
+  template:
+    spec:
+      containers:
+      - name: test-restore-run
+        image: {{ .Values.nuget.image }}
+        imagePullPolicy: IfNotPresent
+        env:
+          - name: NUGET_SERVER
+            value: {{ .Values.nuget.server }}
+      restartPolicy: OnFailure
+
+

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "WY+74sHK+hp1bgZg2+24x3QE6c5ct4w28q9nYDmzRiBSaBziboHxSLfdZl/RMxc6ylURqnuCgAbkkN9Etc1dyA==",
+  "success": false,
+  "projectFilePath": "C:\\repo\\test-download-packages-local-nuget\\restore-proj\\test-restore.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\repo\\test-download-packages-local-nuget\\restore-proj\\nonexisting' doesn't exist.",
+      "libraryId": "Leapwork.Automation.Drivers.Data"
+    }
+  ]
+}
