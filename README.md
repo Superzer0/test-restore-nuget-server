@@ -2,7 +2,8 @@
 
 Chart testing internal nuget server within K8S by means of Jobs.
 You can adjust the target Nuget server URL and image name.
-Run commands from WSL/Linux shell
+Run commands from WSL/Linux shell.
+The test job downloads approximately 300MB with reach run.
 
 ## Running locally
 
