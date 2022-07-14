@@ -19,3 +19,14 @@ docker run -e "NUGET_SERVER=https://api.nuget.org" test-restore-job:latest
 # deploy the testing job 
 ./deploy-job.sh
 ```
+
+## Testing performance on skylab-dev and skylab-test
+
+```sh
+# Deploy both jobs
+./deploy-job-skylab-test.sh && ./deploy-job-skylab-dev.sh
+
+# Observe the results and completion time
+k get job test-restore -n skylab-dev &&  k get job test-restore -n skylab-test
+
+```
